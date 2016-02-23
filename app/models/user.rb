@@ -1,9 +1,13 @@
 class User < ActiveRecord::Base
+
+  validates :username, uniqueness: true
+
   has_secure_password
 
-  def self.confirm(params)
-    @user = User.find_by({username: params[:username]})
-    @user.try(:authenicate, params[:password_digest])
+  def self.confirm(username, password)
+    @user = User.find_by_username(username)
+   
+    @user.try(:authenticate, password)
   end
 
 end

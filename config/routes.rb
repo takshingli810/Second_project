@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "users#index"  
   
   #creating all the user routes for cruding 
-  resources :users
+  resources :users, :groups
 
   # sign in route for user session
   get "/sign_in", to: "sessions#new"

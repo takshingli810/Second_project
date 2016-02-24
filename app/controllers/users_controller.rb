@@ -1,49 +1,50 @@
 class UsersController < ApplicationController
   
-  # index page
   def index
-
-    render :index
+    render :index 
+    #renders this after destroy profile
+    # and destroy session
   end
 
-  # this creates new user 
   def new
-    @user = User.new
+    @user = User.new # this creates new user 
   end
 
-  def create
-    # TODO: ask for `password` and `password_confirmation` from user
+  def create #creating user 
     @user = User.create(user_params)
-    login(@user)
-    binding.pry
-    redirect_to user_path(@user)
+    login(@user) # using login method from session_help
+    redirect_to user_path(@user) # show method to user profile
   end
 
   def show
+    # redirect to this after logging in and also signing up
     @user = User.find(params[:id])
   end
 
   def edit
-    @user = User.find(params[:id])
+    # grabbing data for update method
+    @user = User.find(params[:id]) 
   end
 
   def update
-    @user = User.find(params[:id])
+    # update user profile
+    @user = User.find(params[:id]) 
     @user.update_attributes(user_params)
     @user.save
     redirect_to user_path(@user)
   end
 
-  def destroy
+  def destroy 
+    #destroys user from database
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to users_path
+    redirect_to users_path # back to root 
   end
 
   private
   
-  def user_params
-    # TODO: don't require `password_digest`, only `password` and `password_confirmation`
+  def user_params 
+  #strong params for creating user
     params.require(:user)
     .permit(:username, 
             :email, 

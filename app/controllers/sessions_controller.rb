@@ -12,8 +12,6 @@ class SessionsController < ApplicationController
       if @user 
         login(@user)
         redirect_to current_user
-        binding.pry
-
       else
          redirect_to "/sign_in"
       end

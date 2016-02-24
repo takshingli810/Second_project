@@ -1,2 +1,6 @@
 <h1>Welcome, <%= @user.username %></h1>
 <p><%= @user.bio%></p>
+
+
+
+<%=link_to "logout", "/sessions" , method: :delete%>

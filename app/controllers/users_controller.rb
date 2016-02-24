@@ -14,6 +14,8 @@ class UsersController < ApplicationController
   def create
     # TODO: ask for `password` and `password_confirmation` from user
     @user = User.create(user_params)
+    login(@user)
+    binding.pry
     redirect_to user_path(@user)
   end
 

@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   # create session
   post "/sessions", to: "sessions#create"
 
+  # delete session
+  delete '/sessions', to: "sessions#destroy"
+
+
 end

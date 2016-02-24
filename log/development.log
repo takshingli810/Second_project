@@ -5892,3 +5892,2467 @@ Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joeshmoe"]]
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joeshmoe"]]
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joeshmoe"]]
+
+
+Started GET "/" for ::1 at 2016-02-23 15:02:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 90006ms (Views: 388.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 15:04:29 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35368ms (Views: 69.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:05:05 -0800
+
+
+Started GET "/" for ::1 at 2016-02-23 15:05:06 -0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58353ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:06:05 -0800
+
+
+Started GET "/" for ::1 at 2016-02-23 15:06:07 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["password_digest", "$2a$10$QqO4HhQUC2oTdQ2.4tfwIuFlQJiMc9gsA40ADADENd3lIAfDcINyW"], ["updated_at", "2016-02-23 23:08:05.107884"], ["id", 6]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "bobtheman"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "bobtheman"]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199279ms (Views: 49.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:09:26 -0800
+
+
+Started GET "/" for ::1 at 2016-02-23 15:09:33 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:09:33 -0800
+
+
+Started GET "/" for ::1 at 2016-02-23 15:09:46 -0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1
+Completed   in 25809ms (ActiveRecord: 1.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$qAWijWZVRQO8Q06smrXN7.OEE25hdHerHw7I7Mdgg0JZX7G6KYola"], ["updated_at", "2016-02-23 23:10:31.745579"], ["id", 6]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "bobtheman"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "bobtheman"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "bobtheman"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bobtheman' AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'somethingnew' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'somethingnew' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'somethingnew' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'somethingnew' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "somethingnew"], ["password_digest", "$2a$10$lwqBZ1hTdI/JhplZUt62ieJyrE8j6dAEnPl7PtHCRG3Lqj78lJO6u"], ["created_at", "2016-02-23 23:14:04.329527"], ["updated_at", "2016-02-23 23:14:04.329527"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-02-23 15:19:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14926ms (Views: 270.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:20:07 -0800
+
+
+Started GET "/new" for ::1 at 2016-02-23 15:20:11 -0800
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (146.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (186.2ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-23 15:20:14 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 87ms (Views: 53.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-23 15:20:14 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-23 15:21:13 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:21:13 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:21:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:21:14 -0800
+
+
+Started POST "/users" for ::1 at 2016-02-23 15:21:30 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zttxiwvsxfM/NlQfReKIdtxpjqIIMEJDdGddkgBKHcESMQ4PrL+AHvszmME614kUQeVbmDvY8KQwOv9ccIWr5w==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"imthebest@gmail.com"}, "commit"=>"Create me :D"}
+Unpermitted parameters: password, password_confirmation
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'imthebest' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil} missing required keys: [:id]):
+  app/controllers/users_controller.rb:17:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.4ms)
+
+
+Started POST "/users" for ::1 at 2016-02-23 15:23:13 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zttxiwvsxfM/NlQfReKIdtxpjqIIMEJDdGddkgBKHcESMQ4PrL+AHvszmME614kUQeVbmDvY8KQwOv9ccIWr5w==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"imthebest@gmail.com"}, "commit"=>"Create me :D"}
+Unpermitted parameters: password, password_confirmation
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'imthebest' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil} missing required keys: [:id]):
+  app/controllers/users_controller.rb:17:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-23 15:24:17 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:24:17 -0800
+
+
+Started POST "/users" for ::1 at 2016-02-23 15:24:34 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+X70JhA0Iba16cIICXEsyIxEX2i1rHQmaNhMCtLfsADD4RUPxOVax7Sa9ZfEMXRv73ER5E+Azfd/sP+W4TI5g==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"imthebest@gmail.com"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'imthebest' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "imthebest"], ["email", "imthebest@gmail.com"], ["password_digest", "$2a$10$lIEs7qmfCWPanixiDPMEV.i2s536R10h6S1k1cNNgEsSyiRaU0P2K"], ["created_at", "2016-02-23 23:24:34.956671"], ["updated_at", "2016-02-23 23:24:34.956671"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 86ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/8" for ::1 at 2016-02-23 15:24:34 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:25:30 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:25:40 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDLPNoH+qGaQ82DJuGdnVOpQuXHduE/gUTHQivjkbcuU2LCyJq3ti1T2rBfHUmY2d9xsS+5Q/QcVbHJEiCvb7Q==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/user.rb:8:in `confirm'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (159.1ms)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160223022443')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160222195755')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160223004353')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160223010534')[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160223022443')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160222195755')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160223004353')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160223010534')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/users/8" for ::1 at 2016-02-23 15:29:24 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 404 Not Found in 27ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=8):
+  app/controllers/users_controller.rb:21:in `show'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.7ms)
+
+
+Started POST "/users" for ::1 at 2016-02-23 15:29:36 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+X70JhA0Iba16cIICXEsyIxEX2i1rHQmaNhMCtLfsADD4RUPxOVax7Sa9ZfEMXRv73ER5E+Azfd/sP+W4TI5g==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"imthebest@gmail.com"}, "commit"=>"Create me :D"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'imthebest' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "imthebest"], ["email", "imthebest@gmail.com"], ["password_digest", "$2a$10$LbD1pY43.lVfrSUKe3tlXOJZagCNcorqcpcLQLJGrLsnxDxcJBfTy"], ["created_at", "2016-02-23 23:29:36.643201"], ["updated_at", "2016-02-23 23:29:36.643201"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 116ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-23 15:29:36 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 241ms (Views: 239.7ms | ActiveRecord: 0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:30:03 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:30:10 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SKmKJN6u3Ztg1++iZC3xDo7ca+q1TQMh3WFxFJrCZmaUQ/Wgef2YdqTSI3wbGPBsE1C+0IalscaZPNPa6g3QQA==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/user.rb:8:in `confirm'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'imthebest' AND "users"."id" != 1) LIMIT 1
+
+
+Started POST "/users" for ::1 at 2016-02-23 15:45:14 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+X70JhA0Iba16cIICXEsyIxEX2i1rHQmaNhMCtLfsADD4RUPxOVax7Sa9ZfEMXRv73ER5E+Azfd/sP+W4TI5g==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"imthebest@gmail.com"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'imthebest' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil} missing required keys: [:id]):
+  app/controllers/users_controller.rb:17:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:46:06 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:46:24 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYfPPjwuFTguwU5H4u1nxkjXc8Grm1bJd2dtgm346j/dbbC6m31Q1erEgpmd2Gak1Vum+5hz5C4zOs9MHTdcGQ==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/user.rb:8:in `confirm'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:52:03 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYfPPjwuFTguwU5H4u1nxkjXc8Grm1bJd2dtgm346j/dbbC6m31Q1erEgpmd2Gak1Vum+5hz5C4zOs9MHTdcGQ==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/user.rb:8:in `confirm'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.6ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:56:07 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYfPPjwuFTguwU5H4u1nxkjXc8Grm1bJd2dtgm346j/dbbC6m31Q1erEgpmd2Gak1Vum+5hz5C4zOs9MHTdcGQ==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 92ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:56:07 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:56:07 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:56:15 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j3x8lHdFZGBTkxvhXJv5rGg5koD3J6H+gQdOO7eEdbRTlgMQ0BYhjZeW1z8jrvjO9bVHusTPExnFWuz1x0vDkg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 73ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:56:15 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 15:57:34 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 15:57:34 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:57:42 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RmW5kTtSJ1YCnDyHnte9I0LrL5S7jva3ti83HEnVv4t8+li474NcJwPvCxhTl+WEId5hGEGiT2ahR4SAejg2A==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/BrianLi/dev/second_project/instaGroups/app/views"
+):
+  actionview (4.2.5.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (71.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.6ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 15:59:03 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RmW5kTtSJ1YCnDyHnte9I0LrL5S7jva3ti83HEnVv4t8+li474NcJwPvCxhTl+WEId5hGEGiT2ahR4SAejg2A==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/user.rb:8:in `confirm'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (3.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.7ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:06:23 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RmW5kTtSJ1YCnDyHnte9I0LrL5S7jva3ti83HEnVv4t8+li474NcJwPvCxhTl+WEId5hGEGiT2ahR4SAejg2A==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.8ms)
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/BrianLi/dev/second_project/instaGroups/app/views"
+):
+  actionview (4.2.5.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:10:04 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RmW5kTtSJ1YCnDyHnte9I0LrL5S7jva3ti83HEnVv4t8+li474NcJwPvCxhTl+WEId5hGEGiT2ahR4SAejg2A==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/BrianLi/dev/second_project/instaGroups/app/views"
+):
+  actionview (4.2.5.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:11:19 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RmW5kTtSJ1YCnDyHnte9I0LrL5S7jva3ti83HEnVv4t8+li474NcJwPvCxhTl+WEId5hGEGiT2ahR4SAejg2A==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 104ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:11:20 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 16:11:39 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:11:40 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:11:45 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:15:13 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 25.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:15:13 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:15:18 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:16:16 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 27.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:16:16 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:16:25 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:16:40 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gdp42x0M84IW7TJqNfebBeg13Mw+uqQzUoUrG9zLLUDFMAdful+2b9Lo/rRKwppndbkJ9g1SFtQW2InVrASbZg==", "user"=>{"username"=>"imthebest", "password_digest"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Unpermitted parameter: password_digest
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 24.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:16:40 -0800
+
+
+Started GET "/users/new" for ::1 at 2016-02-23 16:18:13 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2016-02-23 16:18:49 -0800
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 16:18:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:19:00 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCbJhMD3i1mLklYcWhXq44KIxPsgw9MA5D6jlcxIAZpeuSitFCbwKIrhYYOXVbJE4b2Kd9rvatHzVhAJ/6WIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 99ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:24:09 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCbJhMD3i1mLklYcWhXq44KIxPsgw9MA5D6jlcxIAZpeuSitFCbwKIrhYYOXVbJE4b2Kd9rvatHzVhAJ/6WIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (private method `require' called for nil:NilClass):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:24:29 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCbJhMD3i1mLklYcWhXq44KIxPsgw9MA5D6jlcxIAZpeuSitFCbwKIrhYYOXVbJE4b2Kd9rvatHzVhAJ/6WIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (private method `require' called for nil:NilClass):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.5ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:25:13 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCbJhMD3i1mLklYcWhXq44KIxPsgw9MA5D6jlcxIAZpeuSitFCbwKIrhYYOXVbJE4b2Kd9rvatHzVhAJ/6WIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 28.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:25:13 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:25:33 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZCbJhMD3i1mLklYcWhXq44KIxPsgw9MA5D6jlcxIAZpeuSitFCbwKIrhYYOXVbJE4b2Kd9rvatHzVhAJ/6WIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 28.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:25:33 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 16:25:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 342ms (Views: 319.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 16:25:52 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:26:15 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 110ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 16:29:24 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 16:29:58 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.2ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:29:58 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:29:58 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:29:59 -0800
+
+
+Started PUT "/__web_console/repl_sessions/4d110ce62235a2fa37f5645ff1caf8cc" for ::1 at 2016-02-23 16:30:05 -0800
+
+
+Started GET "/" for ::1 at 2016-02-23 16:38:13 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (108.5ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:38:13 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:38:22 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `user_id' for #<User:0x007f854ef01ce0>):
+  app/helpers/sessions_helper.rb:4:in `login'
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.8ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:39:05 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `user_id' for #<User:0x007f854e34c620>):
+  app/helpers/sessions_helper.rb:4:in `login'
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.9ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:39:14 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `user_id' for #<User:0x007f8550121308>):
+  app/helpers/sessions_helper.rb:4:in `login'
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.5ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:39:20 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:40:18 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:41:11 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:41:11 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:44:59 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 25.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:47:40 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 105ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:48:10 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:48:52 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"imthebest", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "imthebest"]]
+  Rendered sessions/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 21.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2016-02-23 16:49:56 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tHMVNhr9TG0lUkz2P1yrejOwidQGAsAIy8Zv/8UOGz1omWqyva4JgOFXgChAaaoYrjxc7jXqcu+Pm80xtcGtGw==", "user"=>{"username"=>"a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>""}, "commit"=>"Create me :D"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'a' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "a"], ["email", ""], ["password_digest", "$2a$10$/G7po53CSgE0dret7Bk7duRIMtjlG357orchs6aDrkmtLg7zvDnde"], ["created_at", "2016-02-24 00:49:56.624672"], ["updated_at", "2016-02-24 00:49:56.624672"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 89ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 16:49:56 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:50:14 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `user_id' for #<User:0x007f854ba3a8e0>):
+  app/helpers/sessions_helper.rb:4:in `login'
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:51:33 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `user_id' for #<User:0x007f854ab48990>):
+  app/helpers/sessions_helper.rb:4:in `login'
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:51:50 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:52:34 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.8ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:52:44 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkG1Wz0IKDlOtsTPWgjw6yFKM6Mc8zJHuiztXpukUwZqq8rfmltt1IqzCBElPfGJvMbmmS8bgKD+cU+Q62vlIA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.6ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 16:53:30 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 16:53:30 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:53:38 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.4ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:56:36 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.6ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:56:57 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.6ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:57:00 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.7ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:58:52 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Redirected to 
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.8ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:59:03 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Redirected to 
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.7ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 16:59:34 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 2.0ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.1ms)
+
+
+Started PUT "/__web_console/repl_sessions/66abd2e7f979faa4f4a77bdc79bfa0f6" for ::1 at 2016-02-23 17:00:22 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:00:31 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Completed 500 Internal Server Error in 34134ms (ActiveRecord: 0.8ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:01:07 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLpHpUHLpCjhvvIWiCX3/ao+BG732bDzwsHAdF8F+de6JaaMlRrfWeDNxYlFZa9ayQtK4g31CSLVqXPobOhwQ==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Redirected to 
+Completed 500 Internal Server Error in 10075ms (ActiveRecord: 0.7ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 17:01:17 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:01:17 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:01:23 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFstwVnk1BhlLvW0U4pyssU22QAzomhtd09FKdi5FJj4sVJF/reR9aErOWosv3PQWLoMOgBK2oozEufnqHaivg==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000users/2
+Redirected to 
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.1ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (159.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:01:52 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFstwVnk1BhlLvW0U4pyssU22QAzomhtd09FKdi5FJj4sVJF/reR9aErOWosv3PQWLoMOgBK2oozEufnqHaivg==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 100ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:01:52 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:01:53 -0800
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:02:28 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 29.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:02:28 -0800
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:10:47 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:10:47 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:10:49 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFstwVnk1BhlLvW0U4pyssU22QAzomhtd09FKdi5FJj4sVJF/reR9aErOWosv3PQWLoMOgBK2oozEufnqHaivg==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "a"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 79ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-23 17:10:49 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:10:52 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oc189t8+gY8QXtReYrnJjU09p1s1UsSLNojA0UuvKgJ9JwNyeG3EYtRbGIAdjMjv0LFyYQa6dmxy1WIfO2CcJA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 82ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:10:52 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:12:16 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 26.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:12:16 -0800
+
+
+Started GET "/users/2" for ::1 at 2016-02-23 17:12:27 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-23 17:12:27 -0800
+
+
+Started POST "/sessions" for ::1 at 2016-02-23 17:12:31 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oc189t8+gY8QXtReYrnJjU09p1s1UsSLNojA0UuvKgJ9JwNyeG3EYtRbGIAdjMjv0LFyYQa6dmxy1WIfO2CcJA==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Redirected to http://localhost:3000/users/2

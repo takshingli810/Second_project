@@ -7,18 +7,21 @@ class SessionsController < ApplicationController
 
   def create
     user_params = params.require(:user).permit(:username, 
-                                        :password, :password_confirmation)    
-    @user = User.confirm(user_params)
+                                        :password, :password_confirmation, :id)    
+    @user = User.confirm(user_params[:username], user_params[:password])
       if @user 
         login(@user)
-        redirect_to "users/#{@user.id}"
+        redirect_to current_user
+        binding.pry
+
       else
          redirect_to "/sign_in"
       end
   end
 
   def destroy
-    
+    logout
+    redirect_to root_path
   end
 
 end

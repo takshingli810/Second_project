@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   
   # index page
   def index
+
     render :index
   end
 
@@ -11,8 +12,9 @@ class UsersController < ApplicationController
   end
 
   def create
-     @user = User.create(user_params)
-     redirect_to user_path(@user)
+    # TODO: ask for `password` and `password_confirmation` from user
+    @user = User.create(user_params)
+    redirect_to user_path(@user)
   end
 
   def show
@@ -39,10 +41,12 @@ class UsersController < ApplicationController
   private
   
   def user_params
+    # TODO: don't require `password_digest`, only `password` and `password_confirmation`
     params.require(:user)
     .permit(:username, 
             :email, 
-            :password_digest)
+            :password,
+            :password_confirmation)
   end
 
 end

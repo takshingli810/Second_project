@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
 
   validates :username, uniqueness: true
 
+  # validates confirmation of password
   has_secure_password
 
   def self.confirm(username, password)

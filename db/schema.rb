@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160225052032) do
+ActiveRecord::Schema.define(version: 20160225230923) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "group_name"
-    t.string   "picture_id"
+    t.integer  "picture_id"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20160225052032) do
     t.string   "bio"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "file"
+    t.integer  "group_id"
   end
 
 end

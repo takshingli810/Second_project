@@ -1,6 +1,5 @@
 <h1>Welcome, <%= @user.username %></h1>
-<p><%= @user.bio%></p>
+<div><%= @user.bio%></div>
 
-
-
-<%=link_to "logout", "/sessions" , method: :delete%>
+<%= link_to "Edit me =)", edit_user_path(@user.id) %>
+<%= button_to "Logout", "/sessions" , method: :delete%>

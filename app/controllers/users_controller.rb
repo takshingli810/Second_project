@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   def create #creating user 
     @user = User.create(user_params)
     login(@user) # using login method from session_help
-    redirect_to user_path(@user) # show method to user profile
+    redirect_to "/users/#{@user.id}" # show method to user profile
   end
 
   def show
@@ -50,6 +50,7 @@ class UsersController < ApplicationController
             :email, 
             :password,
             :password_confirmation)
+          
   end
 
 end

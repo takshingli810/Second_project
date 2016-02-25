@@ -1,12 +1,17 @@
 class GroupsController < ApplicationController
 
+  def index
+    @groups = Group.all
+    render :index
+  end
+
   def new
     @group = Group.new
   end
 
   def create
     @group = Group.create(group_params)
-    redirect_to group_path(@group)
+    redirect_to user_group_path(@group.user_id, @group.id)
   end
 
   def show
@@ -32,7 +37,7 @@ class GroupsController < ApplicationController
 
   private 
   def group_params
-    params.require(:group).permit(:group_name)
+    params.require(:group).permit(:group_name, :user_id)
   end
 
 end

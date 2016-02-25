@@ -1,9 +1,10 @@
 <h1>Create a group</h1>
 
-<%= form_for @group do |f| %>
+<%= form_for @group, url: {action: :create, controller: :groups} do |f| %>
   <div>
-    <%=f.label "Group Name:"%>
-    <%= f.text_field :group_name%>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.label "Group Name:" %>
+    <%= f.text_field :group_name %>
   </div>
 
   <%= f.submit "Create me :D" %>

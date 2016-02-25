@@ -1,0 +1,10 @@
+<h1>Groups</h1>
+
+
+
+<% @groups.each do |group| %>
+<%= group.group_name %>
+<% group.users.each do |username|%>
+<%= username.username%>
+<% end %>
+<%end%>

@@ -1,0 +1,11 @@
+<h1>Edit Group Profile</h1>
+
+<%# binding.pry %>
+
+<%= form_for @group, url: {action: :edit, controller: :groups} do |f| %>
+  <div>
+    <%= f.label :group_name %>
+    <%= f.text_field :group_name, placeholder: "group name"%>
+  </div>
+  <%= f.submit "edit me X)" %>
+<%end%>

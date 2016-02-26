@@ -27332,3 +27332,2009 @@ Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e80
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 20:38:39 -0800
+
+
+Started GET "/users/9/groups/9" for ::1 at 2016-02-25 20:44:06 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"9", "id"=>"9"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 9]]
+  Rendered groups/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 20:44:07 -0800
+
+
+Started GET "/users" for ::1 at 2016-02-25 20:44:11 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2016-02-25 20:44:50 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 20:44:50 -0800
+
+
+Started GET "/users" for ::1 at 2016-02-25 20:45:19 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 20:45:19 -0800
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 20:45:20 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 20:45:36 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 20:45:48 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-25 20:45:49 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f3qSjgBNQndwVzGdTOn8lAo7+mHBhQoMQ7tK/HElWo+jkO0Kpx4HmrRS/UMz3P32l7cvW/JtuOsH5ugyAersqQ==", "user"=>{"username"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>""}, "commit"=>"Create me :D"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/users/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/" for ::1 at 2016-02-25 20:45:49 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 20:45:51 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-25 20:45:55 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K1MZ68zs2FM8QTaKqQwRfFrPsKhssH9NLNZH/VdJFxb3uWZva7+dvvhE+lTWORAex0Nlkl9Yzapoi+UzJ4ahMA==", "user"=>{"username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"1"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = '1' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "1"], ["email", "1"], ["password_digest", "$2a$10$fM0G3/hsOKUUMaeXtYQOD.8JNDRK12c1A9bczWVil9tNMjAtN9.ei"], ["created_at", "2016-02-26 04:45:55.914065"], ["updated_at", "2016-02-26 04:45:55.914065"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 79ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/11" for ::1 at 2016-02-25 20:45:55 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/11/groups/new" for ::1 at 2016-02-25 20:45:58 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"11"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered groups/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/11/groups" for ::1 at 2016-02-25 20:46:05 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8d5UybYKsJArFOqM0O3j8u3xB0V8NUO180U7eoOc+4YtNCtNEVn1fe8RJlKv2OKQcH3Sf0/d8VK3GJm081NNoA==", "group"=>{"user_id"=>"11", "group_name"=>"123"}, "commit"=>"Create me :D", "user_id"=>"11"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["group_name", "123"], ["user_id", 11], ["created_at", "2016-02-26 04:46:05.885971"], ["updated_at", "2016-02-26 04:46:05.885971"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/11/groups/10
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/11/groups/10" for ::1 at 2016-02-25 20:46:05 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"11", "id"=>"10"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 10]]
+  Rendered groups/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:46:16 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:46:16.763466"], ["updated_at", "2016-02-26 04:46:16.763466"]]
+  [1m[35m (6.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 7.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 10, group_name: "123", picture_id: nil, user_id: 11, created_at: "2016-02-26 04:46:05", updated_at: "2016-02-26 04:46:05", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:46:59 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:46:59.495942"], ["updated_at", "2016-02-26 04:46:59.495942"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 10, group_name: "123", picture_id: nil, user_id: 11, created_at: "2016-02-26 04:46:05", updated_at: "2016-02-26 04:46:05", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.8ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:50:30 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:50:30.122028"], ["updated_at", "2016-02-26 04:50:30.122028"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 8.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>10} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.3ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:50:36 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:50:36.191429"], ["updated_at", "2016-02-26 04:50:36.191429"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 7.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>10} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.1ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:51:06 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:51:06.269722"], ["updated_at", "2016-02-26 04:51:06.269722"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 8.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 10, group_name: "123", picture_id: nil, user_id: 11, created_at: "2016-02-26 04:46:05", updated_at: "2016-02-26 04:46:05", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.1ms)
+
+
+Started GET "/users/" for ::1 at 2016-02-25 20:54:02 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/group/10/picture" for ::1 at 2016-02-25 20:54:21 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5q+iqV58hLyBgV79NDfk7rqzSY4U6ulXergXW/CU2eU6Rd0t+S/BUUWEkiNLAuWMJz+ctCcCW7A+5bWVgFtvww==", "picture"=>{"url"=>"https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"}, "commit"=>"upload me", "id"=>"10"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/ceae2044-37f3-4a08-a426-025e7107219e/"], ["group_id", 10], ["created_at", "2016-02-26 04:54:21.538053"], ["updated_at", "2016-02-26 04:54:21.538053"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 7.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 10, group_name: "123", picture_id: nil, user_id: 11, created_at: "2016-02-26 04:46:05", updated_at: "2016-02-26 04:46:05", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.4ms)
+
+
+Started GET "/users/" for ::1 at 2016-02-25 20:57:39 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 20:57:59 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 37ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2016-02-25 20:58:27 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7emNfhF15vkSuldR41XUwOEEjpL6wnWj/NHFoCo1qE8xA/L6tiajFNa/m4+cYNWifIhbqMkqx0S4jGduWvoeaQ==", "user"=>{"username"=>"what ever", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"f@who.com"}, "commit"=>"Create me :D"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'what ever' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "what ever"], ["email", "f@who.com"], ["password_digest", "$2a$10$68S0SC3e3JyHAnZOOCjEOOsdmp.LUEJ7LCSnSqI7m1Inz7DxmOQmy"], ["created_at", "2016-02-26 04:58:27.726762"], ["updated_at", "2016-02-26 04:58:27.726762"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 83ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/12" for ::1 at 2016-02-25 20:58:27 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/12/groups/new" for ::1 at 2016-02-25 20:58:50 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"12"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+  Rendered groups/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/12/groups" for ::1 at 2016-02-25 20:59:01 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsuNxFdZKRUydzTKK5b9q8TQOzgz8hLqtLLez+rusx/CIfJA8Aps+PZy+BRUo/zJWVzuAgAaoA3w73wBmiEFOQ==", "group"=>{"user_id"=>"12", "group_name"=>"show me the money"}, "commit"=>"Create me :D", "user_id"=>"12"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["group_name", "show me the money"], ["user_id", 12], ["created_at", "2016-02-26 04:59:01.641502"], ["updated_at", "2016-02-26 04:59:01.641502"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/12/groups/11
+Completed 302 Found in 15ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/users/12/groups/11" for ::1 at 2016-02-25 20:59:01 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"12", "id"=>"11"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 11]]
+  Rendered groups/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 20:59:44 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l9fEMRTFqKt/VsouD7Nk8VvAR/dsJoLLh4sualCavjtLPbu1s5btRrtTBvBwhmWTxkySzV/OMCzD1oykIFUIHQ==", "picture"=>{"url"=>"https://ucarecdn.com/1491dbb4-1580-455c-8aae-c7614e9b4e5b/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/1491dbb4-1580-455c-8aae-c7614e9b4e5b/"], ["group_id", 11], ["created_at", "2016-02-26 04:59:44.109966"], ["updated_at", "2016-02-26 04:59:44.109966"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 7.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.2ms)
+
+
+Started PUT "/__web_console/repl_sessions/8055bd7a4aafb2cc36532246a5774616" for ::1 at 2016-02-25 21:01:09 -0800
+
+
+Started GET "/users/12/groups/11" for ::1 at 2016-02-25 21:01:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"12", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 11]]
+  Rendered groups/show.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 498ms (Views: 442.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:01:33 -0800
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:01:42 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:01:42.733311"], ["updated_at", "2016-02-26 05:01:42.733311"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (183.2ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:05:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:05:51.680386"], ["updated_at", "2016-02-26 05:05:51.680386"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 2.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.9ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:05:57 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:05:57.792582"], ["updated_at", "2016-02-26 05:05:57.792582"]]
+  [1m[36m (7.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 8.9ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.3ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:06:26 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:06:27.000544"], ["updated_at", "2016-02-26 05:06:27.000544"]]
+  [1m[36m (27.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 29.7ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>nil} missing required keys: [:id, :user_id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.5ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:07:45 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:07:45.992813"], ["updated_at", "2016-02-26 05:07:45.992813"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 9.5ms)
+
+NameError (undefined local variable or method `group' for #<PicturesController:0x007fdbd9654db8>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:07:53 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:07:53.808213"], ["updated_at", "2016-02-26 05:07:53.808213"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `group_url' for #<PicturesController:0x007fdbd8c258d8>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.7ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:08:05 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:08:05.363625"], ["updated_at", "2016-02-26 05:08:05.363625"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 9.0ms)
+
+NameError (undefined local variable or method `group_path' for #<PicturesController:0x007fdbdd1805e0>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.2ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:08:12 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:08:12.766070"], ["updated_at", "2016-02-26 05:08:12.766070"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 8.4ms)
+
+NameError (undefined local variable or method `groups_path' for #<PicturesController:0x007fdbd8ee0f00>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.9ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:08:26 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:08:26.871248"], ["updated_at", "2016-02-26 05:08:26.871248"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 9.5ms)
+
+NoMethodError (undefined method `groups_path' for #<PicturesController:0x007fdbd93f4708>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.8ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:08:44 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:08:44.885422"], ["updated_at", "2016-02-26 05:08:44.885422"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 21:08:44 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 248ms (Views: 246.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 21:09:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:09:04 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:09:04 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:09:04 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-25 21:09:04 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:09:04 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:09:05 -0800
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:09 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:09.671561"], ["updated_at", "2016-02-26 05:09:09.671561"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 8.8ms)
+
+NameError (undefined local variable or method `users_group_path' for #<PicturesController:0x007fdbda385ff0>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.4ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:10 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:10.041012"], ["updated_at", "2016-02-26 05:09:10.041012"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 7.5ms)
+
+NameError (undefined local variable or method `users_group_path' for #<PicturesController:0x007fdbdaa8a620>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.4ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:10 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:10.400079"], ["updated_at", "2016-02-26 05:09:10.400079"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 6.2ms)
+
+NameError (undefined local variable or method `users_group_path' for #<PicturesController:0x007fdbd97b0860>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.4ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:25 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:25.514825"], ["updated_at", "2016-02-26 05:09:25.514825"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 8.6ms)
+
+NoMethodError (undefined method `users_group_path' for #<PicturesController:0x007fdbddb16f78>):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.9ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:32 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:33.007969"], ["updated_at", "2016-02-26 05:09:33.007969"]]
+  [1m[36m (7.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 8.7ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.7ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:38 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:39.065771"], ["updated_at", "2016-02-26 05:09:39.065771"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 8.9ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>"11"} missing required keys: [:user_id]):
+  app/controllers/pictures_controller.rb:7:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.4ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:09:50 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:09:50.334469"], ["updated_at", "2016-02-26 05:09:50.334469"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.7ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:10:20 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.4ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:10:20.983762"], ["updated_at", "2016-02-26 05:10:20.983762"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>11} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.3ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:10:45 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:10:45.757648"], ["updated_at", "2016-02-26 05:10:45.757648"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 8.6ms)
+
+NoMethodError (undefined method `user' for #<Group:0x007fdbda381a40>):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.0ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:10:57 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:10:57.231143"], ["updated_at", "2016-02-26 05:10:57.231143"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 33ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/groups" for ::1 at 2016-02-25 21:10:57 -0800
+
+ActionController::RoutingError (No route matches [GET] "/groups"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.0ms)
+
+
+Started GET "/groups" for ::1 at 2016-02-25 21:11:44 -0800
+
+ActionController::RoutingError (No route matches [GET] "/groups"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/BrianLi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.5ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:11:46 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:11:46.991151"], ["updated_at", "2016-02-26 05:11:46.991151"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 8.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>"11"} missing required keys: [:user_id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.0ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:12:15 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:12:15.526727"], ["updated_at", "2016-02-26 05:12:15.526727"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 8.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>:user_id} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.8ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:12:27 -0800
+
+SyntaxError (/Users/BrianLi/dev/second_project/instaGroups/app/controllers/pictures_controller.rb:8: syntax error, unexpected '(', expecting keyword_end
+      redirect_to user_group_path(@group)(:id)
+                                          ^
+/Users/BrianLi/dev/second_project/instaGroups/app/controllers/pictures_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/pictures_controller.rb:8: syntax error, unexpected '(', expecting keyword_end
+  app/controllers/pictures_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.8ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:12:43 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:12:43.266695"], ["updated_at", "2016-02-26 05:12:43.266695"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>11} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.6ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:12:56 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:12:56.587030"], ["updated_at", "2016-02-26 05:12:56.587030"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 8.8ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 11, group_name: "show me the money", picture_id: nil, user_id: 12, created_at: "2016-02-26 04:59:01", updated_at: "2016-02-26 04:59:01", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.1ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:13:16 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:13:16.191732"], ["updated_at", "2016-02-26 05:13:16.191732"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 8.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Picture id: 35, url: "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4...", group_id: 11, created_at: "2016-02-26 05:13:16", updated_at: "2016-02-26 05:13:16">} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:13:32 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:13:32.310819"], ["updated_at", "2016-02-26 05:13:32.310819"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 9.0ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>36} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.7ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:13:53 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:13:53.272513"], ["updated_at", "2016-02-26 05:13:53.272513"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>37} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.9ms)
+
+
+Started POST "/group/11/picture" for ::1 at 2016-02-25 21:14:07 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ3Qa78qJnvbkUaClseSMulxfu21GXc7Udk3gCdgFH/R56/vGHljlh+Uilzp8pNQdP2r14bxxdwVhJVOV6+iWQ==", "picture"=>{"url"=>"https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"}, "commit"=>"upload me", "id"=>"11"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/8f6cfff1-f9eb-4e0b-a129-981f4a2b9ebc/"], ["group_id", 11], ["created_at", "2016-02-26 05:14:07.588014"], ["updated_at", "2016-02-26 05:14:07.588014"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>38} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 21:18:58 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 21:20:28 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/application.self-4110bc4d7c218f8037b21903058ef7c34fbb730e9a96de9374d797e8ab7f5ca6.css?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:20:28 -0800
+
+
+Started GET "/" for ::1 at 2016-02-25 21:21:05 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:05 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:05 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:05 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:05 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:21:06 -0800
+
+
+Started GET "/" for ::1 at 2016-02-25 21:21:07 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:21:07 -0800
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 21:23:07 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 64ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2016-02-25 21:23:16 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D8MPv01p68y2LfP1OmYPQs2ctw+cflXjBbWTIC1loyfTKXA76jquIXIoPytFUw4gUBBiNa+W5wRB6DHuXaoVAQ==", "user"=>{"username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"1"}, "commit"=>"Create me :D"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = '1' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Redirected to http://localhost:3000/users/
+Completed 302 Found in 132ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/" for ::1 at 2016-02-25 21:23:16 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 21:23:39 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-25 21:23:43 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8D6/vSl+dacDJmotl47n3kew6+jeMRbsvveLIKTY7eMs1MA5ji0wSscjpvPou+a82jw+0u3ZpAv6qinu1BdbxQ==", "user"=>{"username"=>"5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"5"}, "commit"=>"Create me :D"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = '5' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "5"], ["email", "5"], ["password_digest", "$2a$10$7eWQPyfw2K/AYbDbxPLEV.L6D3CxRd77iodVH3dy3tHNrPqas0B22"], ["created_at", "2016-02-26 05:23:44.006053"], ["updated_at", "2016-02-26 05:23:44.006053"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 100ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/users/13" for ::1 at 2016-02-25 21:23:44 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/13/groups/new" for ::1 at 2016-02-25 21:23:45 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"13"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered groups/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/13/groups" for ::1 at 2016-02-25 21:23:48 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wTSZb1FFEAnLOApn5d0otxA6H5TvSf+kq8pH2pJ/sWcd3ubr9hZV5A89xrma6CnVjbbKrtyhTUPvl+UU4rAHQQ==", "group"=>{"user_id"=>"13", "group_name"=>"5"}, "commit"=>"Create me :D", "user_id"=>"13"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["group_name", "5"], ["user_id", 13], ["created_at", "2016-02-26 05:23:48.053102"], ["updated_at", "2016-02-26 05:23:48.053102"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/13/groups/12
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:23:48 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 82ms (Views: 79.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:24:09 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ia4NCjIAlN0ebPTzI2uGewwT+x5DrZXEWiv13w7hqQAbMewj5tHvrB8fw2zuK97cbya1krmBLBVNQ0ZDPQwgg==", "picture"=>{"url"=>"https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[35mGroup Load (0.4ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"], ["group_id", 12], ["created_at", "2016-02-26 05:24:09.996618"], ["updated_at", "2016-02-26 05:24:09.996618"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 13.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>39} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (215.7ms)
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:24:36 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ia4NCjIAlN0ebPTzI2uGewwT+x5DrZXEWiv13w7hqQAbMewj5tHvrB8fw2zuK97cbya1krmBLBVNQ0ZDPQwgg==", "picture"=>{"url"=>"https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"], ["group_id", 12], ["created_at", "2016-02-26 05:24:36.479637"], ["updated_at", "2016-02-26 05:24:36.479637"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<Group id: 12, group_name: "5", picture_id: nil, user_id: 13, created_at: "2016-02-26 05:23:48", updated_at: "2016-02-26 05:23:48", url: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+
+
+Started PUT "/__web_console/repl_sessions/248dbd188f6891ef4d38333abf96e52d" for ::1 at 2016-02-25 21:31:41 -0800
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:31:47 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ia4NCjIAlN0ebPTzI2uGewwT+x5DrZXEWiv13w7hqQAbMewj5tHvrB8fw2zuK97cbya1krmBLBVNQ0ZDPQwgg==", "picture"=>{"url"=>"https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"], ["group_id", 12], ["created_at", "2016-02-26 05:31:47.662970"], ["updated_at", "2016-02-26 05:31:47.662970"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 8.4ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>"12"} missing required keys: [:user_id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.7ms)
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:32:04 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ia4NCjIAlN0ebPTzI2uGewwT+x5DrZXEWiv13w7hqQAbMewj5tHvrB8fw2zuK97cbya1krmBLBVNQ0ZDPQwgg==", "picture"=>{"url"=>"https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"], ["group_id", 12], ["created_at", "2016-02-26 05:32:04.914641"], ["updated_at", "2016-02-26 05:32:04.914641"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 8.5ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups", :id=>nil, :user_id=>#<User id: 13, username: "5", password_digest: "$2a$10$7eWQPyfw2K/AYbDbxPLEV.L6D3CxRd77iodVH3dy3tH...", email: "5", bio: nil, created_at: "2016-02-26 05:23:44", updated_at: "2016-02-26 05:23:44", file: nil, group_id: nil>} missing required keys: [:id]):
+  app/controllers/pictures_controller.rb:8:in `addPictureToGroup'
+
+
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/BrianLi/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.4ms)
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:32:57 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 101ms (Views: 65.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:32:57 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:32:57 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:32:57 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-25 21:32:57 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:32:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:32:58 -0800
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:34:46 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 87ms (Views: 55.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:34:46 -0800
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:34:48 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Ia4NCjIAlN0ebPTzI2uGewwT+x5DrZXEWiv13w7hqQAbMewj5tHvrB8fw2zuK97cbya1krmBLBVNQ0ZDPQwgg==", "picture"=>{"url"=>"https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/b6b53038-acda-40aa-9d3b-7fa49ea0cc0d/"], ["group_id", 12], ["created_at", "2016-02-26 05:34:48.928992"], ["updated_at", "2016-02-26 05:34:48.928992"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/users/13/groups/12
+Completed 302 Found in 15ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:34:48 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-25 21:34:49 -0800
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:34:56 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vMoY5G4nqZNTlCuflsINxTd8CdEJYy2v72eXeDZ0rKlgIGdgyXTsfpeR50Hp9wynqvDc6zqLn0irOjW2Rrsajw==", "picture"=>{"url"=>""}, "commit"=>"upload me", "id"=>"12"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", ""], ["group_id", 12], ["created_at", "2016-02-26 05:34:56.254875"], ["updated_at", "2016-02-26 05:34:56.254875"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+Redirected to http://localhost:3000/users/13/groups/12
+Completed 302 Found in 20ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:34:56 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/group/12/picture" for ::1 at 2016-02-25 21:35:09 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LqF3eAkcAPVtxp51KbmM3qadDc0Juz+O8amOWURxFTvySwj8rk9FGKnDUqtWjI28OxHY9zpTjWm19CyXNL6jHQ==", "picture"=>{"url"=>"https://ucarecdn.com/3a32d21e-329a-4c7b-90a6-0b53d37dfba7/"}, "commit"=>"upload me", "id"=>"12"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/3a32d21e-329a-4c7b-90a6-0b53d37dfba7/"], ["group_id", 12], ["created_at", "2016-02-26 05:35:09.947092"], ["updated_at", "2016-02-26 05:35:09.947092"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+Redirected to http://localhost:3000/users/13/groups/12
+Completed 302 Found in 15ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/13/groups/12" for ::1 at 2016-02-25 21:35:09 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"13", "id"=>"12"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 12]]
+  Rendered groups/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.3ms)

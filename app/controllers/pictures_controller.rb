@@ -6,7 +6,7 @@ class PicturesController < ApplicationController
     @picture = @group.pictures.new(picture_params)
     if @picture.save 
       redirect_to "/users/#{current_user.id}/groups/#{@group.id}"
-      end
+    end
     
   end
 

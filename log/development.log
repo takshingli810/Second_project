@@ -29338,3 +29338,450 @@ Processing by GroupsController#show as HTML
   [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 12]]
   Rendered groups/show.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 21:40:44 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-26 10:01:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 330ms (Views: 318.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-26 10:01:53 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-02-26 10:07:16 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 102ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-26 10:07:39 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-26 10:07:39 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-26 10:07:40 -0800
+
+
+Started GET "/" for ::1 at 2016-02-26 10:08:31 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-26 10:08:31 -0800
+
+
+Started GET "/" for ::1 at 2016-02-26 10:10:59 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:11:00 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-02-26 10:11:18 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/sessions" for ::1 at 2016-02-26 10:11:58 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7YLgix3C/STMxDDO8kSQCF+SnJpNVLxr/KJVa4bk/r7XHQGiyROGVc23B1E/BMivPKfSFrd4Bbrryub3tQl3A==", "user"=>{"username"=>"chini", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "chini"]]
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 92ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/9" for ::1 at 2016-02-26 10:11:58 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/9/edit" for ::1 at 2016-02-26 10:12:01 -0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered users/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/9/edit" for ::1 at 2016-02-26 10:12:17 -0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered users/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-02-26 10:12:17 -0800
+
+
+Started GET "/" for ::1 at 2016-02-26 10:14:52 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-26 10:14:57 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-26 10:15:06 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kGgBziygk3urB87QNOyDwwj2KdNGY12ONWJ4WjQ7hsxMgn5Ki/PWlm8CAg5L2YKhlXr86XWL72lxP9qURPQw6g==", "user"=>{"username"=>"hello1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"hello"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'hello1' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "hello1"], ["email", "hello"], ["password_digest", "$2a$10$Xrrupa.lAc5qkd0EwjuAE.BXbT4Wh2rtEKOjilWiWTxg8/ogDA3re"], ["created_at", "2016-02-26 18:15:06.700988"], ["updated_at", "2016-02-26 18:15:06.700988"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 93ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/14" for ::1 at 2016-02-26 10:15:06 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/14/groups/new" for ::1 at 2016-02-26 10:15:08 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered groups/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 33.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/14/groups" for ::1 at 2016-02-26 10:15:13 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es1zDi5i18PYV935f5rAKbz2I2/sVUdzg+hs/fIeWM7OJwyKiTGSLhxSEScAr8FLIXr2Vd+99ZTHtc4zgtHu6A==", "group"=>{"user_id"=>"14", "group_name"=>"hello"}, "commit"=>"Create me :D", "user_id"=>"14"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["group_name", "hello"], ["user_id", 14], ["created_at", "2016-02-26 18:15:13.458209"], ["updated_at", "2016-02-26 18:15:13.458209"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/14/groups/13
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/14/groups/13" for ::1 at 2016-02-26 10:15:13 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"14", "id"=>"13"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mPicture Load (0.6ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 13]]
+  Rendered groups/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 56ms (Views: 28.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/group/13/picture" for ::1 at 2016-02-26 10:15:27 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Qybs1SfIONZ8WnaXbKwGE4E8PJXjNXfYFxY8v4R8a0l5uQ388xlDp30pQQih7F604glyGRkZzgkAfo8jt5Hiw==", "picture"=>{"url"=>"https://ucarecdn.com/5ad59fa0-f5c2-416c-9649-6d151b3f5922/"}, "commit"=>"upload me", "id"=>"13"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/5ad59fa0-f5c2-416c-9649-6d151b3f5922/"], ["group_id", 13], ["created_at", "2016-02-26 18:15:27.610794"], ["updated_at", "2016-02-26 18:15:27.610794"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14]]
+Redirected to http://localhost:3000/users/14/groups/13
+Completed 302 Found in 10ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/14/groups/13" for ::1 at 2016-02-26 10:15:27 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"14", "id"=>"13"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 13]]
+  Rendered groups/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-26 10:21:39 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 125ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2016-02-26 10:21:54 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-02-26 10:21:58 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tP/rVXsfJI8g1TNJF5LU107FL4PUsCuB2wc47T1BBWJoFZTR3ExhYuTQ/5dop9W100n6uedYmWafWpojTY6zRA==", "user"=>{"username"=>"chini", "password"=>"[FILTERED]"}, "commit"=>"Sign me in >=D"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "chini"]]
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 81ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/9" for ::1 at 2016-02-26 10:21:59 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/9/groups/new" for ::1 at 2016-02-26 10:22:04 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"9"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered groups/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/9/groups" for ::1 at 2016-02-26 10:22:06 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L1Cvb9gLH9tJ7iiVw3y0d3q72Yn0fNZQ0vb73bb/2przutDrf1haNo3r5Eu8SbUV5zcMs8eUZLeWq1kTxjBsvA==", "group"=>{"user_id"=>"9", "group_name"=>"23432"}, "commit"=>"Create me :D", "user_id"=>"9"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["group_name", "23432"], ["user_id", 9], ["created_at", "2016-02-26 18:22:06.833846"], ["updated_at", "2016-02-26 18:22:06.833846"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/9/groups/14
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/9/groups/14" for ::1 at 2016-02-26 10:22:06 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"9", "id"=>"14"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 14]]
+  Rendered groups/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/group/14/picture" for ::1 at 2016-02-26 10:22:23 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JdCAVo5PRAcvNi+tUVcpQtmkYtlh4TgwElpfJBwJrrH5Ov/SKRwB6usz43MuYiggRCi341IJitdWB/3qbMYYlw==", "picture"=>{"url"=>"https://ucarecdn.com/21b1f4ec-e25e-4e74-b60a-1ec9d22d57ca/"}, "commit"=>"upload me", "id"=>"14"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/21b1f4ec-e25e-4e74-b60a-1ec9d22d57ca/"], ["group_id", 14], ["created_at", "2016-02-26 18:22:23.930630"], ["updated_at", "2016-02-26 18:22:23.930630"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+Redirected to http://localhost:3000/users/9/groups/14
+Completed 302 Found in 12ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/users/9/groups/14" for ::1 at 2016-02-26 10:22:23 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"9", "id"=>"14"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 14]]
+  Rendered groups/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-26 10:26:05 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)

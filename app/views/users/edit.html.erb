@@ -20,8 +20,11 @@
       <%=f.label :bio %>
       <%= f.text_field :bio, placeholder: "bio" %>
     </div>
-
+  
+    <button>
     <%= f.submit "Edit me >:D" %>
-    <h5><%= button_to 'Delete me =(', @user , method: :delete %></h5>
-
+    </button>
+  
   <%end%>
+
+  <h5><%= button_to 'Delete me =(', @user , method: :delete %></h5>

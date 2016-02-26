@@ -3,6 +3,6 @@
 
 <%= button_to "Make a group", new_user_group_path(@user.id), method: :get%>
 
-<%= button_to "Edit me =)", edit_user_path(@user.id) %>
+<%= button_to "Edit me =)", edit_user_path(@user.id) , method: :get%>
 
 <%= button_to "Logout =(", "/sessions" , method: :delete%>

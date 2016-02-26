@@ -1,0 +1,14 @@
+<h1><%= @group.group_name %></h1>
+
+<%=form_for @picture do |f|  %>
+  <!-- <input type="hidden" role="uploadcare-uploader" name="url"/> -->
+  <%= f.hidden_field :url, :role=>"uploadcare-uploader" %>
+
+
+  <%= f.submit "upload me" %>
+
+<%end%>
+
+<% @pictures.each do |picture| %>
+  <img src = "<%= picture.url %>">
+<% end %> 

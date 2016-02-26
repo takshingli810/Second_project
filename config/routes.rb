@@ -8,6 +8,12 @@ Rails.application.routes.draw do
    resources :groups
   end
 
+  post "/group/:id/picture", to: "pictures#addPictureToGroup", as: "pictures"
+
+  # patch "/users/:user_id/groups", to: "groups#addPictureToGroup", as: "patch_user_group"
+
+  
+
   get "/users/:user_id/groups", to: "memberships#index", as:"membership_index"
   post "/groups/:group_id/users", to: "memberships#create", as: "membership_create"
 

@@ -10,8 +10,9 @@ class MembershipsController < ApplicationController
   def create 
     @user = current_user
     @group = Group.find(params[:group_id])
+    # @group.users << @user
     @user.groups.push(@group)
     redirect user_group_path(@user)
   end
-  
+
 end

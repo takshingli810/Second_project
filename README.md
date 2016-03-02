@@ -2,11 +2,11 @@
 This Rails Application is a prototype of grouping website for instagrammers to set up their own group page instead of and also schedule their own meetups. It is still currently underwork, but at least everything in the backend is functional. 
 
 ## Technologies Used
-Ruby on Rails
-[Trello](https://trello.com/b/3beazRQl/instagroup)
-Bootstrap(still working on it)
-PostgreSQL
-UploadCare
+1. Ruby on Rails
+2. [Trello](https://trello.com/b/3beazRQl/instagroup)
+3. Bootstrap(still working on it)
+4. PostgreSQL
+5. UploadCare
 
 ### Planning Stage
 I mainly used Trello to do the planning. I drew the relationship table with draw.io. I also used Trello checklist to make sure the user stories works accordingly, but there are still things I still have to work on in order to make the site look pretty. 

@@ -1,5 +1,5 @@
 # InstaGroups (Second Project)
-This Rails Application is a prototype of grouping website for instagrammers to set up their own group page instead of and also schedule their own meetups. It is still currently underwork, but at least everything in the backend is functional. 
+This Rails Application is a prototype of grouping website for instagrammers to set up their own group page instead of using one single handle. They would be able to use their own handles to post pictures into the groups and also schedule their own meetups(later feature). It is still currently underwork, but at least everything in the backend is functional. 
 
 ## Technologies Used
 1. Ruby on Rails

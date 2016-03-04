@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   has_many :memberships
   has_many :groups, through: :memberships
 
-
+  #TODO: nice validation! consider adding others.
   validates :username, uniqueness: true
 
   # validates confirmation of password

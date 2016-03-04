@@ -31263,3 +31263,542 @@ Processing by GroupsController#show as HTML
   Rendered groups/show.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms)
   [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160222195755)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222195755"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Migrating to AddColumnToUser (20160223004353)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "userconfirmation" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223004353"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Migrating to DeleteColumnPasswordconfirmation (20160223010534)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "userconfirmation" varchar) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (2.1ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160223010534"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+Migrating to Deleteuserconfirmation (20160223022443)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223022443"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to CreateGroups (20160224024418)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160224024418"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Migrating to CreatePictures (20160224041833)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "group_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160224041833"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+Migrating to CreateMemberships (20160225022753)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "group_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_memberships_on_user_id" ON "memberships" ("user_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_memberships_on_group_id" ON "memberships" ("group_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225022753"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to ChangingUserIdtoInteger (20160225052032)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "groups"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "agroups"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "agroups"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160225052032"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Migrating to AddFieldToUsers (20160225194646)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "file" varchar
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160225194646"]]
+  [1m[35m (6.2ms)[0m  commit transaction
+Migrating to ChangingColumnAttributePhotoId (20160225213142)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "groups"[0m
+  [1m[35m (0.6ms)[0m  DROP TABLE "groups"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "agroups"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "agroups"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225213142"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddingColumnToUsers (20160225230923)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "group_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225230923"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnToGroupUrl (20160226030658)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "groups" ADD "url" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160226030658"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-03-03 14:48:35 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 985ms (Views: 973.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-03 14:48:37 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-03-03 14:50:19 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 107ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2016-03-03 14:50:22 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-03-03 14:50:31 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hWLDYmXkvMt4vbc7EfVa+mjO24552Y7wL04BAGCM7ThPozT2wqcPzrsPNgEdtHUCQ9X1ElNIiS9N+bXH317jQQ==", "user"=>{"username"=>"it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"it@it.com"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'it' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "it"], ["email", "it@it.com"], ["password_digest", "$2a$10$glKdsMwc8/sdjLg3G.ChMuB70RIPkWAkKNI/x8S/lktCMwPe0BydK"], ["created_at", "2016-03-03 22:50:31.918816"], ["updated_at", "2016-03-03 22:50:31.918816"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 96ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/users/1" for ::1 at 2016-03-03 14:50:31 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/groups/new" for ::1 at 2016-03-03 14:50:33 -0800
+Processing by GroupsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered groups/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/1/groups" for ::1 at 2016-03-03 14:50:37 -0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gjHs6ep+YP4X1IktFsuq2txkRI9ODYoKV5GohEt5RGlI8Bt9TT3T+9RmCBcaioUi939qE2ScjdU1JhxD9KtKEA==", "group"=>{"user_id"=>"1", "group_name"=>"racoons"}, "commit"=>"Create me :D", "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "groups" ("group_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["group_name", "racoons"], ["user_id", 1], ["created_at", "2016-03-03 22:50:37.953511"], ["updated_at", "2016-03-03 22:50:37.953511"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/groups/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/groups/1" for ::1 at 2016-03-03 14:50:37 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 71ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/group/1/picture" for ::1 at 2016-03-03 14:50:52 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OYX5NKfppIzzTYViMu7WywozRdmnltS1ZFP+46yzhmXzRA6gAKoXiTD/BFg+r/kzIShrRY0H02oG5EokE2GIHA==", "picture"=>{"url"=>"https://ucarecdn.com/a85c39e9-7560-4ea6-99a9-71c5454490d5/"}, "commit"=>"upload me", "id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/a85c39e9-7560-4ea6-99a9-71c5454490d5/"], ["group_id", 1], ["created_at", "2016-03-03 22:50:52.249142"], ["updated_at", "2016-03-03 22:50:52.249142"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1/groups/1
+Completed 302 Found in 13ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1/groups/1" for ::1 at 2016-03-03 14:50:52 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/group/1/picture" for ::1 at 2016-03-03 14:51:01 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zWo/gCiI7uma2wgz1xbsZ3CbkfC2KSUsW+WSp4KBYLMHq8gUj8td7FlpiQnbV8OfW4C/bJy4IvM5UiZgPVNuyg==", "picture"=>{"url"=>"https://ucarecdn.com/1b2f5a3d-f68f-4bc8-8c5e-31678d6b5191/"}, "commit"=>"upload me", "id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/1b2f5a3d-f68f-4bc8-8c5e-31678d6b5191/"], ["group_id", 1], ["created_at", "2016-03-03 22:51:01.559719"], ["updated_at", "2016-03-03 22:51:01.559719"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/users/1/groups/1
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/1/groups/1" for ::1 at 2016-03-03 14:51:01 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/group/1/picture" for ::1 at 2016-03-03 14:51:28 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8ghGd8qglZ8ejq8sKeYHEyEWEYXM/PKrkYw1L8cw1QNCdaNeGkxU7/Iu4a85rfkZ5922j2i9BXM8YQTAM7NLQ==", "picture"=>{"url"=>"https://ucarecdn.com/6767ad01-17fa-415b-863e-637c476a5bed/"}, "commit"=>"upload me", "id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://ucarecdn.com/6767ad01-17fa-415b-863e-637c476a5bed/"], ["group_id", 1], ["created_at", "2016-03-03 22:51:28.285485"], ["updated_at", "2016-03-03 22:51:28.285485"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1/groups/1
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/groups/1" for ::1 at 2016-03-03 14:51:28 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/group/1/picture" for ::1 at 2016-03-03 14:51:40 -0800
+Processing by PicturesController#addPictureToGroup as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NDf+GW/cwkYJmOVxZTnBAsgy2SF000FVvHwzCzEAak3+9gmNyJ9xQ8oqZEtpeO764yn3vV5CRorey4fMjtJkNA==", "picture"=>{"url"=>"https://ucarecdn.com/dfe32dba-16c5-4859-8be7-a4b58c245a8e/"}, "commit"=>"upload me", "id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pictures" ("url", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://ucarecdn.com/dfe32dba-16c5-4859-8be7-a4b58c245a8e/"], ["group_id", 1], ["created_at", "2016-03-03 22:51:40.712529"], ["updated_at", "2016-03-03 22:51:40.712529"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/users/1/groups/1
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1/groups/1" for ::1 at 2016-03-03 14:51:40 -0800
+Processing by GroupsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."group_id" = ?  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/" for ::1 at 2016-03-03 14:51:57 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-03 14:52:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-03 14:55:45 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/application.self-6807ec4cd89df0fa2f92e1e26931e5c61473be3bd4dd3da7dcd199c23cb4cf16.css?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/uploadcare.self-15a2d9216f8864a2c08b9a05317aa1702b860c24e800b27e81955e8b937b488c.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-03 14:55:45 -0800
+
+
+Started GET "/sign_in" for ::1 at 2016-03-03 14:55:48 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-03-03 14:55:52 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-03-03 14:55:56 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wpzlnawqGBj+mJqLAwEWvDjSPpj5kYvgrh1/gn1gfw1y4QC0fMbZaBI41AgTSui2/hmZkl3QfDgD8E5tiePhQ==", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"asdf"}, "commit"=>"Create me :D"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'asdf' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "asdf"], ["email", "asdf"], ["password_digest", "$2a$10$fG6u.1f5uKjYIIKpa1FEwekz2Bfu.3FuTw.gn14izLznXIzxxmfNq"], ["created_at", "2016-03-03 22:55:56.701281"], ["updated_at", "2016-03-03 22:55:56.701281"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database: INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ilias/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.2ms)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160222195755)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222195755"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Migrating to AddColumnToUser (20160223004353)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "users" ADD "userconfirmation" varchar
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223004353"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to DeleteColumnPasswordconfirmation (20160223010534)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "userconfirmation" varchar) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "users"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160223010534"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Migrating to Deleteuserconfirmation (20160223022443)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "email" varchar, "bio" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223022443"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Migrating to CreateGroups (20160224024418)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160224024418"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to CreatePictures (20160224041833)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "group_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160224041833"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Migrating to CreateMemberships (20160225022753)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "group_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_memberships_on_user_id" ON "memberships" ("user_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_memberships_on_group_id" ON "memberships" ("group_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225022753"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to ChangingUserIdtoInteger (20160225052032)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "groups"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "agroups"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "agroups"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160225052032"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddFieldToUsers (20160225194646)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ADD "file" varchar
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160225194646"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Migrating to ChangingColumnAttributePhotoId (20160225213142)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "groups"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "groups"
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_name" varchar, "picture_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "agroups"
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "agroups"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225213142"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddingColumnToUsers (20160225230923)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "group_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160225230923"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnToGroupUrl (20160226030658)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "groups" ADD "url" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160226030658"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_group_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_memberships_on_user_id' AND type='index'
+
+
+
+Started POST "/users" for ::1 at 2016-03-03 14:56:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3HEWEaitBfVqKde0NAVqfIBfAYQqkKnmykYHXSVphNgWsOGFD+628KmbVo44REWEq0QvGAABrjmo8bOamruKoQ==", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"asdf"}, "commit"=>"Create me :D"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'asdf' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "asdf"], ["email", "asdf"], ["password_digest", "$2a$10$NYmyHwxAqDYV/rHFrlH/gOD5ibd91m9kIz9OWUE7K3V84bNyvprGi"], ["created_at", "2016-03-03 22:56:33.831513"], ["updated_at", "2016-03-03 22:56:33.831513"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 113ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/1" for ::1 at 2016-03-03 14:56:33 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 288ms (Views: 273.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/sessions" for ::1 at 2016-03-03 16:00:17 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"spThIqPfAEoY6mlE8UWuoe3ut/EDHPSPm+s4Xh/6gCl4VRa2BJyzT9tY6H79BIFZxvWZbSmN81D5XIyZoCiOUA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-03 16:00:17 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.0ms)

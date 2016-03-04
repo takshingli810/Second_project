@@ -1,20 +1,22 @@
 Rails.application.routes.draw do
-  
+
   # index to root
-  root to: "users#index"  
-  
-  #creating all the user routes for cruding 
+  root to: "users#index"
+
+  #creating all the user routes for cruding
   resources :users do
+    #NOTE: this nested route represents membership
    resources :groups
   end
+  #NOTE: if you want to CRUD `groups` and ensure that a user can only create a group for themselves (and not others), then also have `resources :groups` just on it's own.
 
+  #NOTE: routes are always plural
   post "/group/:id/picture", to: "pictures#addPictureToGroup", as: "pictures"
 
   # patch "/users/:user_id/groups", to: "groups#addPictureToGroup", as: "patch_user_group"
 
-  
-
   get "/users/:user_id/groups", to: "memberships#index", as:"membership_index"
+  #NOTE: the below route should be a post to `/groups/:group_id/users/:user_id`
   post "/groups/:group_id/users", to: "memberships#create", as: "membership_create"
 
   # sign in route for user session
